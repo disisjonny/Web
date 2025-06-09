@@ -1,0 +1,24 @@
+﻿body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card {
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.form-control, .form-select {
+  font-size: 16px;
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+  .btn {
+    width: 100%;
+  }
+}

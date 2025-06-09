@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Student - Teacher Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Same navbar as dashboard -->
+  </nav>
+  <div class="container mt-4">
+    <h1>Add Student</h1>
+    <form id="addStudentForm">
+      <h3>Student Information</h3>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" required>
+      </div>
+      <div class="mb-3">
+        <label for="birthDate" class="form-label">Birth Date</label>
+        <input type="date" class="form-control" id="birthDate" required>
+      </div>
+      <div class="mb-3">
+        <label for="studentId" class="form-label">Student ID</label>
+        <input type="text" class="form-control" id="studentId" required>
+      </div>
+      <div class="mb-3">
+        <label for="photo" class="form-label">Photo</label>
+        <input type="file" class="form-control" id="photo" accept="image/*">
+      </div>
+      <div class="mb-3">
+        <label for="nationality" class="form-label">Nationality</label>
+        <select class="form-select" id="nationality" required>
+          <option value="Uzbek">Uzbek</option>
+          <option value="Turkmen">Turkmen</option>
+          <option value="Karakalpak">Karakalpak</option>
+          <option value="Kazakh">Kazakh</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" required>
+      </div>
+      <div class="mb-3">
+        <label for="neighborhood" class="form-label">Neighborhood</label>
+        <input type="text" class="form-control" id="neighborhood" required>
+      </div>
+      <div class="mb-3">
+        <label for="class" class="form-label">Class</label>
+        <input type="text" class="form-control" id="class" required>
+      </div>
+      <div class="mb-3">
+        <label for="grade" class="form-label">Grade</label>
+        <input type="text" class="form-control" id="grade" required>
+      </div>
+
+      <h3>Parent Information</h3>
+      <h4>Father</h4>
+      <div class="mb-3">
+        <label for="fatherName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fatherName">
+      </div>
+      <div class="mb-3">
+        <label for="fatherBirthDate" class="form-label">Birth Date</label>
+        <input type="date" class="form-control" id="fatherBirthDate">
+      </div>
+      <div class="mb-3">
+        <label for="fatherPhone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="fatherPhone">
+      </div>
+      <div class="mb-3">
+        <label for="fatherWorkplace" class="form-label">Workplace</label>
+        <input type="text" class="form-control" id="fatherWorkplace">
+      </div>
+      <div class="mb-3">
+        <label for="fatherId" class="form-label">Passport/ID</label>
+        <input type="text" class="form-control" id="fatherId">
+      </div>
+
+      <h4>Mother</h4>
+      <!-- Similar fields for mother -->
+      
+      <h4>Guardian (if applicable)</h4>
+      <!-- Similar fields for guardian -->
+
+      <h3>Activities</h3>
+      <div class="mb-3">
+        <label for="schoolActivities" class="form-label">School Activities</label>
+        <select multiple class="form-select" id="schoolActivities">
+          <option value="Math">Math</option>
+          <option value="English">English</option>
+          <option value="Sports">Sports</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="externalActivities" class="form-label">External Activities</label>
+        <input type="text" class="form-control" id="externalActivities">
+      </div>
+      <div class="mb-3">
+        <label for="coachContact" class="form-label">Coach Contact</label>
+        <input type="text" class="form-control" id="coachContact">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Save Student</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

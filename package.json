@@ -1,0 +1,12 @@
+
+{
+  "name": "teacher-platform",
+  "version": "1.0.0",
+  "description": "Teacher platform for managing student data",
+  "scripts": {
+    "start": "serve -s . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}
